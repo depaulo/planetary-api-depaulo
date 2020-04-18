@@ -1,0 +1,29 @@
+def stock_buy_sell(A) :
+    buy_sell_list = []
+    p=[]
+    for price in A:
+        p.append(price)
+        print(p)
+        if p[-1] < p[0] :
+            buy_sell_list.append(str(p[0]))
+            buy_sell_list.append(str(p[-2]))
+            print(buy_sell_list)
+            for each in range(0, len(buy_sell_list), 2) :
+                print(each)
+                result = (+'('+str(buy_sell_list[0]),str(buy_sell_list[1])+')', end=' ')
+    if not buy_sell_list :
+        print ('No Profit', end=' ')
+        return
+    else :
+        print(result)
+        return
+
+
+
+if __name__ == '__main__' :
+    T = int(input())
+    for i in range(T) :
+        n = int(input())
+        A = [int(a) for a in input().split()]
+        (stock_buy_sell(A))
+        print()

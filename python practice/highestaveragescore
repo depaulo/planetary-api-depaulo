@@ -1,0 +1,13 @@
+def AverageScore(scores) :
+    return
+
+
+if __name__ == '__main__' :
+    input_scores = [{"jerry","65"},{"bob","91"},{"jerry","23"},{"eric","83"}]
+    print(input_scores)
+
+    sums = {}
+    for name, score in input_scores :
+        sums[name] = sums.get(name, 0) + int(score[ :])
+
+    print(name, score)
